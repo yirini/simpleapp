@@ -1,0 +1,10 @@
+<h1>Streets List</h1>
+
+<% streets.forEach(function(street){ %>
+  <li><%= street %></li>
+<% }); %>
+
+<form action="/addstreet" method="POST">
+  <input type="text" name= "newstreet" placeholder="name">
+  <button>I reached a new street!</button>
+</form>
